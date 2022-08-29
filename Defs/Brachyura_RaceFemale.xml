@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="pphhyy_BaseRace_Brachyura">
+		<defName>Brachyura_female</defName>
+		<label>Brachyura</label>
+		<description>Brachyura female.</description>
+		<modExtensions>
+
+		</modExtensions>
+		
+		<statBases>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<MarketValue>800</MarketValue>
+			<MoveSpeed>4.2</MoveSpeed>
+			<ComfyTemperatureMin>5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<PsychicSensitivity>1.0</PsychicSensitivity>
+			<ToxicSensitivity>1.0</ToxicSensitivity>
+			<ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+			<GlobalLearningFactor>1.0</GlobalLearningFactor>
+			<SocialImpact>1.0</SocialImpact>
+			<RoyalFavorValue>1</RoyalFavorValue>
+			<ResearchSpeed>1.0</ResearchSpeed>
+			<MiningSpeed>0.6</MiningSpeed>
+			<LeatherAmount>60</LeatherAmount>
+			<CarryingCapacity>75</CarryingCapacity>
+			<MentalBreakThreshold>0.2</MentalBreakThreshold>
+			<PlantWorkSpeed>0.8</PlantWorkSpeed>
+			<PlantHarvestYield>1.0</PlantHarvestYield>
+			<ConstructionSpeed>1.0</ConstructionSpeed>
+		</statBases>
+
+		<race>
+			<lifeExpectancy>60</lifeExpectancy>
+			<nameGenerator>pphhyy_Brachyura_NamesGeneric</nameGenerator>
+			<!--leatherDef>ESCP_LeatherMaormer</leatherDef>
+			<nameGenerator>ESCP_NamerPersonMaormerMale</nameGenerator>
+			<nameGeneratorFemale>ESCP_NamerPersonMaormerFemale</nameGeneratorFemale-->
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+
+			<lifeStageAges Inherit="false">
+             <li>
+               <def>BrachyuraBaby</def>
+               <minAge>0</minAge>
+             </li>
+             <li>
+               <def>BrachyuraAdult</def>
+               <minAge>1</minAge>
+               <soundWounded>Pawn_BrachyuraIrroatus_Wounded</soundWounded>
+               <soundDeath>Pawn_BrachyuraIrroatus_Death</soundDeath>
+               <soundCall>Pawn_BrachyuraIrroatus_Call</soundCall>
+               <soundAngry>Pawn_BrachyuraIrroatus_Angry</soundAngry>
+             </li>
+            </lifeStageAges>
+		</race>
+	
+		<alienRace>
+		 <generalSettings>
+          <allowHumanBios>true</allowHumanBios>
+		  <humanRecipeImport>true</humanRecipeImport>
+          <maleGenderProbability>0.0</maleGenderProbability>
+          <!-- <femaleGenderProbability>1.0</femaleGenderProbability> -->
+          <alienPartGenerator>
+		   <!-- <colorChannels Inherit="False"/> -->
+			<aliencrowntypes>
+				<li>Average_Normal</li>
+			</aliencrowntypes>
+			<alienbodytypes>
+				<li>Female</li>
+			</alienbodytypes>
+		  </alienPartGenerator>
+
+			</generalSettings>
+			
+			<graphicPaths>
+				<li>
+					<body>Races/BrachyuraRace/Bodies/</body>
+					<head>Races/BrachyuraRace/Heads/Female/</head>
+					<!-- <skeleton>Races/BrachyuraRace/Bodies/dessicated/</skeleton> -->
+					<!-- <skull>Races/BrachyuraRace/Heads/dessicated/</skull> -->
+				</li>
+				<!-- <li>
+				 <lifeStageDefs>
+                    <li>FemaleBrachyuraBaby</li>
+                 </lifeStageDefs>
+                 <body>Races/BrachyuraRace/Bodies/</body>
+				 <head>Races/BrachyuraRace/Heads/Female/</head>
+                 <skeleton>TestPawn/Dessicated/</skeleton>
+                 <skull>TestPawn/Skull/</skull>
+
+                 <customDrawSize>(0.4, 0.4)</customDrawSize>
+				</li> -->
+			</graphicPaths>
+
+			<!--<pawnKindSettings>
+
+			</pawnKindSettings>-->
+			
+			<thoughtSettings>
+				
+			</thoughtSettings>
+			
+			<relationSettings>
+				
+			</relationSettings>
+            	<!-- <traitList>
+                	<li>Numenorian_Blood</li>
+            	</traitList>
+            	<blackTraitList>
+                	<li>Nudist</li>
+					<li>Cannibal</li>
+					<li>Wimp</li>
+					<li>Transhumanist</li>
+					<li>Gourmand</li>
+					<li>DrugDesire</li>
+            	</blackTraitList>			 -->
+            	<!-- <weaponList>
+                	<li MayRequire="Rick.FotRDunedainArmory">FOTR_Bow_Arnorian_Steel_Bow</li>
+            	</weaponList>
+            	<plantList>
+                	<li>FOTR_Plant_Athelas</li>
+            	</plantList>				 -->
+			
+			<raceRestriction>
+				
+			</raceRestriction>
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			<styleSettings>
+            <li>
+                <key>HairDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+            <li>
+                <key>TattooDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+            <li>
+                <key>BeardDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+			</styleSettings>
+			
+		</alienRace>
+			<tools>
+				<!-- <li>
+					<label>left Claw</label>
+						<capacities>
+						<li>Cut</li>
+						</capacities>
+					<power>10</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				</li>
+				<li>
+					<label>right Claw</label>
+						<capacities>
+						<li>Cut</li>
+						</capacities>
+					<power>10</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				</li> -->
+			</tools>
+			<comps>
+		      <li Class="CompProperties_EggLayer">
+			    <eggUnfertilizedDef>EggBrachyuraCoastalUnfertilized</eggUnfertilizedDef>			
+			    <eggFertilizedDef>EggBrachyuraCoastalUnfertilized</eggFertilizedDef>
+			    <eggLayFemaleOnly>true</eggLayFemaleOnly>			
+			    <eggLayIntervalDays>15</eggLayIntervalDays>
+			    <eggCountRange>10~15</eggCountRange>
+		      </li>
+	        </comps>
+	
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+		<defName>pphhyy_Brachyura_BrachyuraPlayerColony</defName>
+		<label>Brachyura Coastal settelment</label>
+		<description>A small Brachyura kingdom settelment.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>Brachyura Knave</pawnSingular>
+		<pawnsPlural>Brachyura Knaves</pawnsPlural>
+		<basicMemberKind>pphhyy_Brachyura_Female</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>FactionIcons/BrachyuraKingdom</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

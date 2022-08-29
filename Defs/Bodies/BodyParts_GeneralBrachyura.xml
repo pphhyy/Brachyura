@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>Head</defName>
+    <label>head</label>
+    <hitPoints>25</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <bleedRate>2</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>HeadCarapace</defName>
+    <label>Head Carapace</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <bleedRate>0</bleedRate>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Brain</defName>
+    <label>brain</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Eye</defName>
+    <label>eye</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <canScarify>true</canScarify>
+    <socketed>false</socketed>
+    <beautyRelated>true</beautyRelated>
+    <bleedRate>0.3</bleedRate>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Antennae</defName>
+    <label>Antennae</label>
+    <hitPoints>12</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <bleedRate>0.1</bleedRate>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rostrum</defName>
+    <label>Rostrum</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <canScarify>true</canScarify>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Mandibles</defName>
+    <label>Mandibles</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <beautyRelated>true</beautyRelated>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Neck</defName>
+    <label>neck</label>
+    <hitPoints>25</hitPoints>
+    <bleedRate>4</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ChestCarapaceII</defName>
+    <label>Chest Carapace II</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>SupraocularSpine</defName>
+    <label>Supraocular spine</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>Spine</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Pereiopod</defName>
+    <label>Pereiopod</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canScarify>true</canScarify>
+    <bleedRate>0.3</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Propodus</defName>
+    <label>Propodus</label>
+    <hitPoints>25</hitPoints>
+    <frostbiteVulnerability>0.0</frostbiteVulnerability>
+    <skinCovered>False</skinCovered>
+    <bleedRate>0.2</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Maxillae</defName>
+    <label>Maxillae</label>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <beautyRelated>true</beautyRelated>
+    <forceAlwaysRemovable>true</forceAlwaysRemovable>
+    <removeRecipeLabelOverride>remove</removeRecipeLabelOverride>
+    <tags>
+      <li>Tongue</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

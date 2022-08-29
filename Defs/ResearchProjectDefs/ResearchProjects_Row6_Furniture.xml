@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_FurnitureI</defName>
+		<label>Brachyura Furniture</label>
+		<description>Brachyura Wepaons Made from their own chitin.</description>
+        <techLevel>Neolithic</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>6.0</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_FurnitureII</defName>
+		<label>Brachyura Furniture</label>
+		<description>Brachyura weapons made from their own chitin, new refining and molding techniques to make more complex weapons.</description>
+        <techLevel>Medieval</techLevel>
+        <baseCost>1000</baseCost>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>6.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_FurnitureI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_FurnitureIII</defName>
+		<label>Brachyura Furniture</label>
+		<description>Brachyura weapons made from their own chitin, new refining and molding techniques to make more complex weapons.</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>1500</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>6.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_FurnitureII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

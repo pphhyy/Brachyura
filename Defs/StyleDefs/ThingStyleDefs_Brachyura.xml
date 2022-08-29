@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>pphhyy_Brachyura_Stool_style</defName>
+	  <graphicData>
+      <texPath>Building/Brachyura_Stool/Brachyura_Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>pphhyy_brachyura_Table1x2c</defName>
+	<graphicData>
+      <texPath>Building/brachyura_Tables/brachyura_Table1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>pphhyy_Brachyura_Table2x2c</defName>
+	  <graphicData>
+      <texPath>Building/brachyura_Tables/Brachyura_Table2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>pphhyy_Brachyura_Table2x4c</defName>
+	  <graphicData>
+      <texPath>Building/brachyura_Tables/Brachyura_Table2x4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>pphhyy_Brachyura_Table3x3c</defName>
+	  <graphicData>
+      <texPath>Building/brachyura_Tables/Brachyura_Table3x3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>Brachyura_BroodSiring</defName>
+    <label>Brood Siring</label>
+    <description>A work station with all the equipment needed to mix wort for beer production. Wort must be fermented to finally become beer.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Building/BroodSiring/BroodSiring</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>false</drawRotated>
+      <!-- <drawSize>(2,2)</drawSize> -->
+      <!-- <shadowData>
+        <volume>(0.52, 0.53, 0.09)</volume>
+        <offset>(0,0,-0.43)</offset>
+      </shadowData> -->
+      <!-- <damageData>
+        <rect>(0.3,0,2.7,1)</rect>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData> -->
+    </graphicData>
+    <!-- <constructEffect>ConstructWood</constructEffect> -->
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>10</Mass>
+    </statBases>
+    <!-- <size>(3,1)</size> -->
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <!-- <hasInteractionCell>True</hasInteractionCell> -->
+    <!-- <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>Brachyura_MakeMaleBrachyuraPrecursor</li>
+      <li>Brachyura_MakeFemaleBrachyuraPrecursor</li>
+      <li>Brachyura_MakeIrroatusBrachyuraPrecursor</li>
+      <li>Brachyura_MakeMinucaBrachyuraPrecursor</li>
+      <li>Brachyura_MakeSeerBrachyuraPrecursor</li>
+      <li>Brachyura_MakeSlaveBrachyuraPrecursor</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Brachyura_Breeding_I</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BrachyuraIrroatus</defName>
+    <label>Brachyura Irroatus</label>
+    <devNote>BrachyuraIrroatus</devNote>
+    <description>Brachyura Irroatus is a large comabt Crab used to protect Brachyura colonys and or colony expansion. While being male and female they do not breed.</description>
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <MarketValue>300</MarketValue>
+      <FilthRate>2</FilthRate>
+    </statBases>
+    <comps>
+      <li Class = "CrabMoulting.CompProperties_CrabMoulting">
+				<days>15</days>	<!--days between moults -->
+				<moultHediff>Brachyura_Moulting</moultHediff>	<!-- the hediff it uses -->
+				<severityPerMoult>0.1</severityPerMoult>	<!-- the severity it increases the hediff by -->
+				<maxSeverity>100.0</maxSeverity>	<!-- the maximum severity -->
+				
+				<regrowLimbs>true</regrowLimbs>	<!-- if missing parts are regrown -->
+				<moultedItem>Brachyura_Chitin</moultedItem>	<!-- item created -->
+				<moultedCount>60</moultedCount>	<!-- amount created -->
+				
+				<allowNonPlayer>false</allowNonPlayer>	<!-- prevents this ticking for non-player pawns -->
+			</li>
+      <!-- <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>14</milkAmount>
+      </li> -->
+    </comps>
+    <race>
+      <body>Brachyura</body>
+      <nameGenerator>pphhyy_Brachyura_NamesGeneric</nameGenerator>
+      <herdAnimal>false</herdAnimal>
+      <!-- <reproductive>false<reproductive> -->
+      <predator>true</predator>
+      <maxPreyBodySize>3</maxPreyBodySize>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.535</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Brachyura_Chitin</leatherDef>
+      <hasGenders>false</hasGenders>
+      <wildness>0</wildness>
+      <roamMtbDays>2</roamMtbDays>
+      <trainability>Advanced</trainability>
+      <meatLabel>crab</meatLabel>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeExpectancy>60</lifeExpectancy>
+      <lifeStageAges>
+				<li>
+				  <def>CrabBabyZoea</def>
+				  <minAge>0</minAge>
+				</li>
+				<li>
+				  <def>CrabJuvenileMegalopa</def>
+				  <minAge>0.5</minAge>
+				</li>
+				<li>
+				  <def>CrabAdult</def>
+				  <minAge>1</minAge>
+                  <soundWounded>Pawn_BrachyuraIrroatus_Wounded</soundWounded>
+                  <soundDeath>Pawn_BrachyuraIrroatus_Death</soundDeath>
+                  <soundCall>Pawn_BrachyuraIrroatus_Call</soundCall>
+                  <soundAngry>Pawn_BrachyuraIrroatus_Angry</soundAngry>
+				</li>
+	  </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalFighter</li>
+    </tradeTags>
+    <tools>
+       <li>
+			<label>left claw</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Cut</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right claw</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>15</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+      <li>
+			<label>mandibles</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>8.5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		  </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BrachyuraIrroatus</defName>
+    <label>Brachyura Irroatus</label>
+    <labelMale>BrachyuraIrroatus</labelMale>
+    <race>BrachyuraIrroatus</race>
+    <combatPower>75</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <label>Zoea</label>
+        <labelPlural>Zoea</labelPlural>
+        <!-- <reproductive>false</reproductive> -->
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/BrachyuraIrroatus</texPath>
+          <drawSize>0.6</drawSize>
+          <!-- <color>(170,170,170)</color> -->
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/Dessicated_BrachyuraIrroatus/Dessicated_BrachyuraIrroatus</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/BrachyuraIrroatus</texPath>
+          <drawSize>1.0</drawSize>
+          <!-- <color>(170,170,170)</color> -->
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/Dessicated_BrachyuraIrroatus/Dessicated_BrachyuraIrroatus</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/BrachyuraIrroatus</texPath>
+          <drawSize>1.5</drawSize>
+          <!-- <color>(170,170,170)</color> -->
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraIrroatus/Dessicated_BrachyuraIrroatus/Dessicated_BrachyuraIrroatus</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- Small crab !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BrachyuraMinuca</defName>
+    <label>BrachyuraMinuca</label>
+    <description>Brachyura Minuca is one of the smallest crustations in the Brachyura family. Minuca are however good for meat, eggs and if your inclined war. As bottom feeders they clean up most of the filth on the ground looking for food.</description>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <LeatherAmount>5</LeatherAmount>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <FilthRate>0</FilthRate>
+    </statBases>
+    <race>
+      <body>Brachyura</body>
+      <nameGenerator>pphhyy_Brachyura_NamesGeneric</nameGenerator>
+      <herdAnimal>false</herdAnimal>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHealthScale>0.6</baseHealthScale>
+      <baseHungerRate>0.28</baseHungerRate>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <hasGenders>false</hasGenders>
+      <wildness>0</wildness>
+      <roamMtbDays>3</roamMtbDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <meatLabel>crab</meatLabel>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <lifeStageAges>
+				<li>
+				  <def>CrabBabyZoea</def>
+				  <minAge>0</minAge>
+				</li>
+				<li>
+				  <def>CrabJuvenileMegalopa</def>
+				  <minAge>0.12</minAge>
+				</li>
+				<li>
+				  <def>CrabAdult</def>
+				  <minAge>0.2</minAge>
+                  <soundWounded>Pawn_BrachyuraIrroatus_Wounded</soundWounded>
+                  <soundDeath>Pawn_BrachyuraIrroatus_Death</soundDeath>
+                  <soundCall>Pawn_BrachyuraIrroatus_Call</soundCall>
+                  <soundAngry>Pawn_BrachyuraIrroatus_Angry</soundAngry>
+				</li>
+	  </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+		    <li Class="CompProperties_EggLayer">
+			    <eggUnfertilizedDef>EggBrachyuraCoastalMinuca</eggUnfertilizedDef>		
+			    <eggFertilizedDef>EggBrachyuraCoastalMinuca</eggFertilizedDef>
+			    <eggLayFemaleOnly>false</eggLayFemaleOnly>
+			    <eggLayIntervalDays>5</eggLayIntervalDays>
+			    <eggCountRange>5~8</eggCountRange>
+		    </li>
+        <li Class = "CrabMoulting.CompProperties_CrabMoulting">
+				 <days>5</days>	<!--days between moults -->
+				 <moultHediff>Brachyura_Moulting</moultHediff>	<!-- the hediff it uses -->
+			   <severityPerMoult>0.1</severityPerMoult>	<!-- the severity it increases the hediff by -->
+				 <maxSeverity>100.0</maxSeverity>	<!-- the maximum severity -->
+				
+				 <regrowLimbs>true</regrowLimbs>	<!-- if missing parts are regrown -->
+				 <moultedItem>Brachyura_Chitin</moultedItem>	<!-- item created -->
+				 <moultedCount>5</moultedCount>	<!-- amount created -->
+				
+				 <allowNonPlayer>false</allowNonPlayer>	<!-- prevents this ticking for non-player pawns -->
+			  </li>
+	  </comps>
+    <tools>
+      <li>
+			 <label>left claw</label>
+			 <capacities>
+			   <li>Blunt</li>
+			   <li>Cut</li>
+			 </capacities>
+			 <power>8</power>
+			 <cooldownTime>2</cooldownTime>
+			 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			 <surpriseAttack>
+			   <extraMeleeDamages>
+				 <li>
+				   <def>Stun</def>
+				   <amount>14</amount>
+				 </li>
+			   </extraMeleeDamages>
+			 </surpriseAttack>
+		  </li>
+      <li>
+			 <label>right claw</label>
+			 <capacities>
+			   <li>Blunt</li>
+			   <li>Cut</li>
+			 </capacities>
+		 	 <power>8</power>
+			 <cooldownTime>2</cooldownTime>
+			 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			 <surpriseAttack>
+			   <extraMeleeDamages>
+				 <li>
+				   <def>Stun</def>
+				   <amount>15</amount>
+				 </li>
+			   </extraMeleeDamages>
+			 </surpriseAttack>
+		  </li>
+      <li>
+			 <label>mandibles</label>
+			 <capacities>
+			   <li>Bite</li>
+			 </capacities>
+			 <power>8.5</power>
+			 <cooldownTime>2</cooldownTime>
+			 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			 <chanceFactor>0.07</chanceFactor>
+		  </li>
+    </tools>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigBirdKindBase">
+    <defName>BrachyuraMinuca</defName>
+    <label>BrachyuraMinuca</label>
+    <labelPlural>Brachyura Minucas</labelPlural>
+    <race>BrachyuraMinuca</race>
+    <combatPower>10</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/BrachyuraMinuca</texPath>
+          <drawSize>1.1</drawSize>
+          <color>(133,107,96)</color>
+          <shaderType>CutoutComplex</shaderType>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/Dessicated_BrachyuraMinuca/Dessicated_BrachyuraMinuca</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/BrachyuraMinuca</texPath>
+          <drawSize>1.4</drawSize>
+          <color>(133,107,96)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/Dessicated_BrachyuraMinuca/Dessicated_BrachyuraMinuca</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/BrachyuraMinuca</texPath>
+          <drawSize>1.8</drawSize>
+          <color>(62,58,66)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Animals/BrachyuraMinuca/BrachyuraMinuca</texPath>
+          <drawSize>1.8</drawSize>
+          <color>(133,107,96)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animals/BrachyuraMinuca/Dessicated_BrachyuraMinuca/Dessicated_BrachyuraMinuca</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

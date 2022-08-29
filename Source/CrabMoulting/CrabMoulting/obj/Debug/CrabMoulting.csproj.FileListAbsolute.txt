@@ -1,0 +1,4 @@
+J:\Modding\Other C#\CrabMoulting\CrabMoulting\obj\Debug\CrabMoulting.csprojAssemblyReference.cache
+J:\Modding\Other C#\CrabMoulting\CrabMoulting\obj\Debug\CrabMoulting.csproj.CoreCompileInputs.cache
+J:\Modding\Other C#\CrabMoulting\CrabMoulting\obj\Debug\CrabMoulting.dll
+J:\Modding\Other C#\CrabMoulting.dll

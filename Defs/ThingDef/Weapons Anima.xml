@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinAnimaSword</defName>
+    <label>Chitin Anima Sword</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A primitive Brachyura Chitin Anima Sword.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinAnimaSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_AnimaChitin>20</Brachyura_AnimaChitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_AnimaWeaponsPrimitive</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinSwordMedievalAnima</defName>
+    <label>chitin Medieval Anima Sword</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Anima Brachyura Chitin Sword.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinSwordMedievalAnima</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>20</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_AdvancedAnimaWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_AnimaStaff</defName>
+    <label>Anima Staff.</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A primitive Brachyura Anima Staff.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_AnimaStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_AnimaChitin>30</Brachyura_AnimaChitin>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_AdvancedAnimaWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ScenarioDef>
+    <defName>LoneFemaleBrachyura</defName>
+	<label>Lone Female Brachyura</label>
+	<scenario>
+		<name>Lone Female Brachyura Coastal</name>
+		<description>You escaped the colony's destruction at the hands of humans, time to rebuild and seek vengeance.</description>
+
+		<summary>A Brachyura Female solo start. Difficult.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>pphhyy_Brachyura_BrachyuraPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+
+		<!-- Config pages -->
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+			<def>ConfigPage_ConfigureStartingPawns</def>
+			<pawnCount>1</pawnCount>
+            <pawnChoiceCount>3</pawnChoiceCount>
+		</li>
+
+		<!-- Player starting stuff spawn method-->
+		<li Class="ScenPart_PlayerPawnsArriveMethod">
+			<def>PlayerPawnsArriveMethod</def>
+			<method>Standing</method>
+		</li>
+			
+		<!-- Starting research -->
+		
+		<!-- Scatter some things near player start -->	
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>200</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+
+		<!-- Start naked -->
+		<li Class="ScenPart_Naked">
+          <def>Naked</def>
+          <context>PlayerStarter</context>
+        </li>
+
+		<!-- Game start dialog -->
+		<li Class="ScenPart_GameStartDialog">
+			<def>GameStartDialog</def>
+			<text>Your old Hive is nothing but ash. You have no choice but to take choose a new home. This place may serve to be the beginning of a flourishing new Hive.</text>
+			<closeSound>GameStartSting</closeSound>
+		</li>
+
+		</parts>
+	</scenario>
+</ScenarioDef>
+
+<ScenarioDef>
+    <defName>NewCoastalBrachyuraColony</defName>
+	<label>Coastal Brachyura Colony</label>
+	<scenario>
+		<name>Coastal Brachyura Colony</name>
+		<description>The colony was crowed so your group and others were sent out to make new homes to grow the greater Brachyura colony.</description>
+
+		<summary>A small group of Brachyura sent to create a new colony.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>pphhyy_Brachyura_BrachyuraPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+
+		<!-- Config pages -->
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+			<def>ConfigPage_ConfigureStartingPawns</def>
+			<pawnCount>1</pawnCount>
+            <pawnChoiceCount>6</pawnChoiceCount>
+		</li>
+
+		<!-- Player starting stuff spawn method-->
+		<li Class="ScenPart_PlayerPawnsArriveMethod">
+			<def>PlayerPawnsArriveMethod</def>
+			<method>Standing</method>
+		</li>
+			
+		<!-- Starting research -->
+
+		<!-- Player starting things -->
+	    <li Class="AlienRace.ScenPart_StartingHumanlikes">
+          <def>StartingHumanlikes</def>
+          <kindDef>pphhyy_Brachyura_Male</kindDef>
+          <pawnCount>2</pawnCount>
+        </li>		
+        <!-- <li Class="AlienRace.ScenPart_StartingHumanlikes">
+          <def>StartingHumanlikes</def>
+          <kindDef>LostWorker</kindDef>
+          <pawnCount>7</pawnCount>
+        </li>	
+		<li Class="AlienRace.ScenPart_StartingHumanlikes">
+          <def>StartingHumanlikes</def>
+          <kindDef>LostPrince</kindDef>          
+          <pawnCount>1</pawnCount>
+        </li>	 -->
+		
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>WoodLog</thingDef>
+			<count>600</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Biomass</thingDef>
+          <count>15</count>
+        </li>
+
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>1050</count>
+        </li>
+
+		<!-- Start naked -->
+		<li Class="ScenPart_Naked">
+          <def>Naked</def>
+          <context>PlayerStarter</context>
+        </li>
+
+		<!-- Game start dialog -->
+		<li Class="ScenPart_GameStartDialog">
+			<def>GameStartDialog</def>
+			<text>A group of brachyura settlers looking to expand the greater colony.</text>
+			<closeSound>GameStartSting</closeSound>
+		</li>
+
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>BrachyuraMinuca</animalKind>
+          <count>4</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>BrachyuraIrroatus</animalKind>
+          <count>1</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+		</parts>
+	</scenario>
+</ScenarioDef>
+</Defs>

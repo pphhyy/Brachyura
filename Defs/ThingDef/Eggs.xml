@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>EggBrachyuraCoastalUnfertilized</defName>
+		<label>Brachyura Coastal Eggs</label>
+		<description>Brachyura eggs of the coastal region.</description>
+		<graphicData>
+		  <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+		  <drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+
+		</comps>
+		<!-- <tradeTags>
+			<li>Exotic</li>	
+		</tradeTags> -->
+	</ThingDef>
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>EggBrachyuraSeerUnfertilized</defName>
+		<label>Brachyura Seer Eggs</label>
+		<description>Brachyura eggs of the coastal region.</description>
+		<graphicData>
+		  <texPath>Resources/BrachyuraEggsRaw/Seer</texPath>
+		  <drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+
+		</comps>
+		<!-- <tradeTags>
+			<li>Exotic</li>
+		</tradeTags> -->
+	</ThingDef>
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>EggBrachyuraCoastalMinuca</defName>
+		<label>Brachyura Coastal Minuca Eggs</label>
+		<description>Brachyura Minuca eggs of the coastal region.</description>
+		<graphicData>
+		  <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+		  <drawSize>0.5</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+
+		</comps>
+		<!-- <tradeTags>
+			<li>Exotic</li>	
+		</tradeTags> -->
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedMale</defName>
+        <label>Brachyura Fertilized Male Egg</label>
+        <description>A soon to be juvenile brahcyura Male.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>1</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>30</hatcherDaystoHatch>
+           <hatcherPawn>pphhyy_Brachyura_Male</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+	 <ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedFemale</defName>
+        <label>Brachyura Fertilized Female Egg</label>
+        <description>A soon to be juvenile brahcyura Female.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>1</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>45</hatcherDaystoHatch>
+           <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+	 <ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedSeer</defName>
+        <label>Brachyura Fertilized Seer Egg</label>
+        <description>A soon to be juvenile brahcyura Seer.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>1</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>45</hatcherDaystoHatch>
+           <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+	 <ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedSlave</defName>
+        <label>Brachyura Fertilized Slave Egg</label>
+        <description>A soon to be juvenile brahcyura Slave.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>1</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>15</hatcherDaystoHatch>
+           <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+	 <ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedIrroatus</defName>
+        <label>Brachyura Fertilized Irroatus Egg</label>
+        <description>A soon to be juvenile brahcyura Irroatus.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>1</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>10</hatcherDaystoHatch>
+           <hatcherPawn>BrachyuraIrroatus</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+	 <ThingDef ParentName="EggFertBase">
+        <defName>EggBrachyuraCoastalFertilizedMinuca</defName>
+        <label>Brachyura Fertilized Minuca Eggs</label>
+        <description>A soon to be clutch of brahcyura Minuca.</description>
+        <graphicData>
+          <texPath>Resources/BrachyuraEggFertilized/CoastalMale</texPath>
+          <drawSize>1</drawSize>
+        </graphicData>
+		<stackLimit>10</stackLimit>
+		<tradeability>None</tradeability>
+	    <statBases>
+		  <Beauty>1</Beauty>
+		  <Mass>0.15</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>500</MarketValue>
+	    </statBases>
+        <comps>
+         <li Class="HatchAsPlayerFaction.CompProperties_HatcherPlayer">
+           <hatcherDaystoHatch>5</hatcherDaystoHatch>
+           <hatcherPawn>BrachyuraIrroatus</hatcherPawn>
+         </li>
+        </comps>
+     </ThingDef>
+
+</Defs>

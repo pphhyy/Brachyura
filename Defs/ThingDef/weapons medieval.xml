@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinTrident</defName>
+    <label>Chitin Trident.</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A Medieval Brachyura Chitin Trident.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinTrident</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>30</Brachyura_Chitin>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+          <extraMeleeDamages>
+              <li>
+                <def>Stab</def>
+                <amount>6</amount>
+                <chance>1</chance>
+              </li>
+              <li>
+                <def>Stab</def>
+                <amount>6</amount>
+                <chance>1</chance>
+              </li>
+          </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  <!--  a b(disapears) c(disapears) d(up by alot) e(up/down) -->
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>false</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinCleaver</defName>
+    <label>chitin Sword</label>
+    <techLevel>Medieval</techLevel>
+    <description>A primitive Brachyura Chitin Cleaver.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinCleaver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>35</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <!-- <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions> -->
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinClawHammer</defName>
+    <label>Chitin Claw Hammer</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Brachyura Chitin Claw Hammer.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinClawHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>35</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <!-- <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions> -->
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinSwordMedieval</defName>
+    <label>chitin Medieval Sword</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Brachyura Chitin Sword.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinSwordMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>20</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinAxeMedieval</defName>
+    <label>chitin Axe Medieval</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Brachyura Chitin Axe.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinAxeMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <!-- <li>SkyRim_Forsworn_Melee_basic</li> -->
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>20</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinHalberd</defName>
+    <label>Chitin Halberd</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Brachyura Chitin Halberd.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinHalberd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>35</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <!-- <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions> -->
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinSpearMedieval</defName>
+    <label>Chitin Medieval spear.</label>
+    <techLevel>Medieval</techLevel>
+    <description>A Medieval Brachyura Chitin Spear.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinSpearMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>30</Brachyura_Chitin>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>pphhyy_Brachyura_ChitinClawMedieval</defName>
+    <label>Brachyura Medieval Chitin Claw</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A primitive Brachyura Claw.</description>
+    <graphicData>
+      <texPath>Weapons/Brachyura_ChitinClawMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <Brachyura_Chitin>30</Brachyura_Chitin>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>True</burnableByRecipe>
+    <tools>
+      <li>
+        <label>Claw</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Pincer</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    <researchPrerequisite>Brachyura_MedievalWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>Brachyura_WeaponBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>false</verticalFlipNorth>
+        <angleAdjustmentNorth>-160</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.0,-1,0.1)</northOffset>  
+        <southOffset>(-0.0,0,0.0)</southOffset>
+        <westOffset>(0.0,0,0.0)</westOffset>
+        <eastOffset>(-0.0,0,0.0)</eastOffset>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

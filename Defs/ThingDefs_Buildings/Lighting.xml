@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Biolamp" ParentName="BuildingBase">
+    <defName>pphhyy_Brachyura_BioLight</defName>
+    <label>Bio Lamp</label>
+    <description>A bio lamp.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Building/Biolight/pphhyy_Brachyura_BioLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <!-- <uiIconPath>Things/Building/Misc/TorchLamp_MenuIcon</uiIconPath> -->
+    <uiIconScale>0.85</uiIconScale>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <!-- <constructEffect>ConstructWood</constructEffect> -->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+      <!-- <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance> -->
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Biomass>1</Biomass>
+    </costList>
+    <costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <!-- <li>PlaceWorker_Heater</li> -->
+      <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <!-- <li Class="CompProperties_Styleable" /> -->
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.01</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <!-- <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain> -->
+        <fuelFilter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(143,198,232,0)</glowColor> <!--last is opacity -->
+      </li>
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.4</fireSize>
+        <offset>(0,0,0.2)</offset>
+      </li> -->
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes><li>Flame</li></focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>Campfire</li>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <designationCategory>Furniture</designationCategory>
+    <designationHotKey>Misc10</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="Biolamp">
+    <defName>DarkBiolamp</defName>
+    <label>dark Bio Lamp</label>
+    <description>A bio lamp.</description>
+    <graphicData>
+      <texPath>Building/Biolight/pphhyy_Brachyura_BioLight</texPath>
+    </graphicData>
+    <!-- <uiIconPath>Things/Building/Misc/Darktorch_MenuIcon</uiIconPath> -->
+    <comps Inherit="False">
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(78, 226, 229, 0)</glowColor><!-- This is a specific darklight color, make sure it matches DarklightUtility.IsDarklight -->
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.01</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <!-- <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain> -->
+        <fuelFilter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li> -->
+      <!-- <li Class="CompProperties_DarklightOverlay">
+        <fireSize>0.4</fireSize>
+        <offset>(0,0,0.2)</offset>
+      </li> -->
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>Campfire</li>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Biolamp">
+    <defName>SunBioLamp</defName>
+    <label>sun Bio lamp</label>
+    <description>a Sun bio lamp.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Building/Biolight/pphhyy_Brachyura_BioSunLight</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <Biomass>10</Biomass>
+    </costList>
+    <costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps Inherit="False">
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>3</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <!-- <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain> -->
+        <fuelFilter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(143,198,232,0)</glowColor>
+      </li>
+      <!-- <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>2900</basePowerConsumption>
+      </li> -->
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+      </li>
+    </comps>
+    <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+  </ThingDef>
+
+</Defs>

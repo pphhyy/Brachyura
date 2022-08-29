@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_PrimitiveWeapons</defName>
+		<label>Primitive Brachyura Weapons</label>
+		<description>Brachyura Wepaons Made from their own chitin.</description>
+        <techLevel>Neolithic</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_MedievalWeapons</defName>
+		<label>Medieval Brachyura Weapons</label>
+		<description>Brachyura weapons made from their own chitin, new refining and molding techniques to make more complex weapons.</description>
+        <techLevel>Medieval</techLevel>
+        <baseCost>1000</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_PrimitiveWeapons</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_AdvancedWeapons</defName>
+		<label>Advanced Brachyura Weapons</label>
+		<description>Brachyura weapons made from their own chitin, new refining and molding techniques to make more complex weapons.</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>1500</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_MedievalWeapons</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_PrimitiveArmor</defName>
+		<label>Primitive Brachyura Armor</label>
+		<description>Brachyura armor Made from their own chitin.</description>
+        <techLevel>Neolithic</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_MedievalArmor</defName>
+		<label>Medieval Brachyura Armor</label>
+		<description>Brachyura armor made from their own chitin, new refining and molding techniques to make more complex armor.</description>
+        <techLevel>Medieval</techLevel>
+        <baseCost>1000</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_PrimitiveArmor</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_AdvancedArmor</defName>
+		<label>Advanced Brachyura Armor</label>
+		<description>Brachyura armor made from their own chitin, new refining and molding techniques to make more complex armor.</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>1500</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>1.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_MedievalArmor</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_AnimaWeaponsPrimitive</defName>
+		<label>Primitive Brachyura Anima Weapons</label>
+		<description>Brachyura weapons made from anima chitin.</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>1500</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="BaseBrachyuraResearch_Weapon">
+		<defName>Brachyura_AdvancedAnimaWeapons</defName>
+		<label>Advanced Brachyura Anima Weapons</label>
+		<description>Brachyura weapons made from anima chitin, new refining and molding techniques to make more complex weapons.</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>1500</baseCost>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+        <prerequisites>
+			<li>Brachyura_AnimaWeaponsPrimitive</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- <ResearchProjectDef ParentName="BaseTelvanniResearch_Plant">
+		<defName>MorrowRim_TelvanniSowingExtracts</defName>
+		<label>Telvanni sowing Vol. II</label>
+		<description>Allows the sowing of plants specially designed by the Telvanni to produce extracts.</description>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>MorrowRim_TelvanniSowingFlowers</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="BaseTelvanniResearch_Plant">
+		<defName>MorrowRim_TelvanniSowingExotic</defName>
+		<label>Telvanni sowing Vol. III</label>
+		<description>Allows the sowing of plants specially designed by the Telvanni to produce exotic materials.</description>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>MorrowRim_TelvanniSowingExtracts</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="BaseTelvanniResearch_Plant">
+		<defName>MorrowRim_TelvanniSowingResource</defName>
+		<label>Telvanni sowing Vol. IV</label>
+		<description>Allows the sowing of plants specially designed by the Telvanni to produce resources.</description>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>MorrowRim_TelvanniSowingExotic</li>
+		</prerequisites>
+	</ResearchProjectDef> -->
+	
+	<!-- Extra -->
+
+	
+</Defs>

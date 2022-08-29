@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="pphhyy_BaseRace_Brachyura">
+		<defName>Brachyura_slave</defName>
+		<label>Brachyura</label>
+		<description>Brachyura slave.</description>
+		<modExtensions>
+
+		</modExtensions>
+		
+		<statBases>
+			<ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+			<MarketValue>200</MarketValue>
+			<MoveSpeed>4.4</MoveSpeed>
+			<ComfyTemperatureMin>5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<PsychicSensitivity>0.8</PsychicSensitivity>
+			<ToxicSensitivity>0.8</ToxicSensitivity>
+			<ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+			<GlobalLearningFactor>0.8</GlobalLearningFactor>
+			<SocialImpact>0.8</SocialImpact>
+			<RoyalFavorValue>0.4</RoyalFavorValue>
+			<ResearchSpeed>0.8</ResearchSpeed>
+			<MiningSpeed>1.2</MiningSpeed>
+			<LeatherAmount>40</LeatherAmount>
+			<CarryingCapacity>60</CarryingCapacity>
+			<MentalBreakThreshold>0.1</MentalBreakThreshold>
+			<PlantWorkSpeed>1.2</PlantWorkSpeed>
+			<PlantHarvestYield>1.2</PlantHarvestYield>
+			<ConstructionSpeed>1.2</ConstructionSpeed>
+		</statBases>
+
+		<race>
+			<lifeExpectancy>60</lifeExpectancy>
+			<nameGenerator>pphhyy_Brachyura_NamesGeneric</nameGenerator>
+			<!--leatherDef>ESCP_LeatherMaormer</leatherDef>
+			<nameGenerator>ESCP_NamerPersonMaormerMale</nameGenerator>
+			<nameGeneratorFemale>ESCP_NamerPersonMaormerFemale</nameGeneratorFemale-->
+			<baseBodySize>0.7</baseBodySize>
+			<baseHealthScale>0.7</baseHealthScale>
+
+			<lifeStageAges Inherit="false">
+             <li>
+               <def>BrachyuraBaby</def>
+               <minAge>0</minAge>
+             </li>
+             <li>
+               <def>BrachyuraAdult</def>
+               <minAge>1</minAge>
+               <soundWounded>Pawn_BrachyuraIrroatus_Wounded</soundWounded>
+               <soundDeath>Pawn_BrachyuraIrroatus_Death</soundDeath>
+               <soundCall>Pawn_BrachyuraIrroatus_Call</soundCall>
+               <soundAngry>Pawn_BrachyuraIrroatus_Angry</soundAngry>
+             </li>
+            </lifeStageAges>
+		</race>
+	
+		<alienRace>
+		 <generalSettings>
+          <allowHumanBios>true</allowHumanBios>
+		  <humanRecipeImport>true</humanRecipeImport>
+          <maleGenderProbability>1.0</maleGenderProbability>
+          <!--femaleGenderProbability>0</femaleGenderProbability-->
+          <alienPartGenerator>
+		   <!-- <colorChannels Inherit="False"/> -->
+			<aliencrowntypes>
+				<li>Average_Normal</li>
+			</aliencrowntypes>
+			<alienbodytypes>
+				<li>Thin</li>
+			</alienbodytypes>
+		  </alienPartGenerator>
+
+			</generalSettings>
+			
+			<graphicPaths>
+				<li>
+					<body>Races/BrachyuraRace/Bodies/</body>
+					<head>Races/BrachyuraRace/Heads/Slave/</head>
+					<!-- <skeleton>Races/BrachyuraRace/Bodies/dessicated/</skeleton> -->
+					<!-- <skull>Races/BrachyuraRace/Heads/dessicated/</skull> -->
+				</li>
+			</graphicPaths>
+
+			<!--<pawnKindSettings>
+
+			</pawnKindSettings>-->
+			
+			<thoughtSettings>
+				
+			</thoughtSettings>
+			
+			<relationSettings>
+				
+			</relationSettings>
+            	<!-- <traitList>
+                	<li>Numenorian_Blood</li>
+            	</traitList>
+            	<blackTraitList>
+                	<li>Nudist</li>
+					<li>Cannibal</li>
+					<li>Wimp</li>
+					<li>Transhumanist</li>
+					<li>Gourmand</li>
+					<li>DrugDesire</li>
+            	</blackTraitList>			 -->
+            	<!-- <weaponList>
+                	<li MayRequire="Rick.FotRDunedainArmory">FOTR_Bow_Arnorian_Steel_Bow</li>
+            	</weaponList>
+            	<plantList>
+                	<li>FOTR_Plant_Athelas</li>
+            	</plantList>				 -->
+			
+			<raceRestriction>
+				
+			</raceRestriction>
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			<styleSettings>
+            <li>
+                <key>HairDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+            <li>
+                <key>TattooDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+            <li>
+                <key>BeardDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </li>
+			</styleSettings>
+			
+		</alienRace>
+			<tools>
+				<!-- <li>
+					<label>left Claw</label>
+						<capacities>
+						<li>Cut</li>
+						</capacities>
+					<power>10</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				</li>
+				<li>
+					<label>right Claw</label>
+						<capacities>
+						<li>Cut</li>
+						</capacities>
+					<power>10</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				</li> -->
+			</tools>
+			<comps>
+              <li Class = "CrabMoulting.CompProperties_CrabMoulting">
+				 <days>15</days>	<!--days between moults -->
+				 <moultHediff>Brachyura_Moulting</moultHediff>	<!-- the hediff it uses -->
+			     <severityPerMoult>0.1</severityPerMoult>	<!-- the severity it increases the hediff by -->
+				 <maxSeverity>100.0</maxSeverity>	<!-- the maximum severity -->
+				
+				 <regrowLimbs>true</regrowLimbs>	<!-- if missing parts are regrown -->
+				 <moultedItem>Brachyura_Chitin</moultedItem>	<!-- item created -->
+				 <moultedCount>40</moultedCount>	<!-- amount created -->
+				
+				 <allowNonPlayer>false</allowNonPlayer>	<!-- prevents this ticking for non-player pawns -->
+			  </li>
+	        </comps>
+	
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

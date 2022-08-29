@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>pphhyy_Brachyura_Racesettings</defName>
+    <pawnKindSettings>
+      <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>pphhyy_Brachyura_Male</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienslavekinds>
+      <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>pphhyy_Brachyura_Male</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienrefugeekinds>
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>pphhyy_Brachyura_Male</li>
+                <li>pphhyy_Brachyura_Female</li>
+                <li>pphhyy_Brachyura_FemaleSeer</li>
+                <li>pphhyy_Brachyura_Slave</li>
+                <!-- <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Arnorian_Footman</li>
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Arthedain_Footman</li>
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Cardolan_Footman</li>   
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Arnorian_Infantry</li>
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Arthedain_Infantry</li>
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Cardolan_Infantry</li>    
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Ranger</li>   -->
+              </kindDefs>
+              <chance>100.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+      <alienwandererkinds>
+        <li>
+          <pawnKindEntries>
+            <!-- <li>
+              <kindDefs>
+                <li MayRequire="Rick.FotRDunedainArmory">FOTR_Dunedain_Ranger</li>
+              </kindDefs>
+              <chance>5.0</chance>
+            </li> -->
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+          </factionDefs>
+        </li>
+      </alienwandererkinds>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+</Defs>

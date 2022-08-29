@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <RulePackDef>
+        <defName>pphhyy_Brachyura_NamesGeneric</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->[MaleList] [FamilyList]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>MaleList</keyword>
+                    <path>BrachyuraNames/BrachyuraNames</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>FamilyList</keyword>
+                    <path>BrachyuraNames/BrachyuraNames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

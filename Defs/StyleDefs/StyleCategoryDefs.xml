@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Generic styles -->
+
+	<StyleCategoryDef>
+		<defName>pphhyy_BrachyuraStyle</defName>
+		<label>Brachyura</label>
+		<iconPath>FactionIcons/BrachyuraKingdom</iconPath>
+		<soundOngoingRitual>RitualSustainer_Morbid</soundOngoingRitual>
+		<!-- <ritualVisualEffectDef>ESCP_Dunmeri</ritualVisualEffectDef> -->
+		<thingDefStyles>
+		  <li>
+            <thingDef>Stool</thingDef>
+            <styleDef>pphhyy_Brachyura_Stool_style</styleDef>
+          </li>
+		  <li>
+			<thingDef>Table1x2c</thingDef>
+			<styleDef>pphhyy_brachyura_Table1x2c</styleDef>
+		  </li>
+          <li>
+			<thingDef>Table2x2c</thingDef>
+			<styleDef>pphhyy_Brachyura_Table2x2c</styleDef>
+		  </li>
+          <li>
+			<thingDef>Table2x4c</thingDef>
+			<styleDef>pphhyy_Brachyura_Table2x4c</styleDef>
+		  </li>
+          <li>
+			<thingDef>Table3x3c</thingDef>
+			<styleDef>pphhyy_Brachyura_Table3x3c</styleDef>
+		  </li>
+		 
+		</thingDefStyles>
+		<!-- <addDesignators>
+		  
+		  <li>ESCP_AshlanderWindChimes</li>
+		  <li>ESCP_AshlanderRug</li>
+		 
+		</addDesignators> -->
+	</StyleCategoryDef>
+
+</Defs>

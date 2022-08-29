@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>BrachyuraLayEggs</defName>	<!-- Change -->
+		<insertTag>Humanlike_PostMain</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalPlayerControlledColonist">
+			<subNodes>
+				<li Class="ThinkNode_ThingDef.ThinkNode_ConditionalThingDef">
+				  <thingDef>Brachyura_female</thingDef>	<!-- Change -->
+				  <subNodes>
+						<li Class="JobGiver_LayEgg" />
+				   </subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+	
+</Defs>

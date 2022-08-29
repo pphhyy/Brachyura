@@ -1,0 +1,14 @@
+		<comps>
+			<li Class = "CrabMoulting.CompProperties_CrabMoulting">
+				<days>15</days>	<!--days between moults -->
+				<moultHediff>Brachyura_Moulting</moultHediff>	<!-- the hediff it uses -->
+				<severityPerMoult>0.1</severityPerMoult>	<!-- the severity it increases the hediff by -->
+				<maxSeverity>1.0</maxSeverity>	<!-- the maximum severity -->
+				
+				<regrowLimbs>true</regrowLimbs>	<!-- if missing parts are regrown -->
+				<moultedItem>Brachyura_Chitin</moultedItem>	<!-- item created -->
+				<moultedCount>60</moultedCount>	<!-- amount created -->
+				
+				<allowNonPlayer>false</allowNonPlayer>	<!-- prevents this ticking for non-player pawns -->
+			</li>
+		</comps>

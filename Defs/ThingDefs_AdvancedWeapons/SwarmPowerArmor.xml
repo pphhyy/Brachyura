@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>pphhyy_Brachyura_SwarmPowerArmor</defName>
+    <label>Swarm Power Armor</label>
+    <description>.</description>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/GrenadierArmor/GrenadierArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <scoreOffset>4</scoreOffset>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GrenadierArmor/GrenadierArmor</wornGraphicPath>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <ammoDef>Steel</ammoDef>
+        <ammoCountPerCharge>25</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch swarm rockets</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>25</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>9</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Brachyura_BioMissle</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+      <li>
+        <label>launch railgun</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>25</range>
+        <!-- <forcedMissRadius>1.9</forcedMissRadius> -->
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>9</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>Proj_GrenadierGrenade</defName>
+    <label>frag grenade</label>
+    <projectile>
+      <speed>16</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

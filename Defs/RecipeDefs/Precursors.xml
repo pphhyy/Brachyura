@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeMaleBrachyuraPrecursor</defName>
+    <label>make male Brahcyura mash</label>
+    <description>Make male Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Male Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_MaleBrachyuraPrecursor>1</Brachyura_MaleBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_I</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeFemaleBrachyuraPrecursor</defName>
+    <label>make female Brahcyura mash</label>
+    <description>Make female Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Female Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_FemaleBrachyuraPrecursor>1</Brachyura_FemaleBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_I</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeSeerBrachyuraPrecursor</defName>
+    <label>make Seer Brahcyura mash</label>
+    <description>Make Seer Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Seer Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_SeerBrachyuraPrecursor>1</Brachyura_SeerBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_III</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeSlaveBrachyuraPrecursor</defName>
+    <label>make Slave Brahcyura mash</label>
+    <description>Make Slave Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Slave Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_SlaveBrachyuraPrecursor>1</Brachyura_SlaveBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_I</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeIrroatusBrachyuraPrecursor</defName>
+    <label>make Irroatus Brahcyura mash</label>
+    <description>Make Irroatus Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Irroatus Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_IrroatusBrachyuraPrecursor>1</Brachyura_IrroatusBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_II</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Brachyura_MakeMinucaBrachyuraPrecursor</defName>
+    <label>make Minuca Brahcyura mash</label>
+    <description>Make Minuca Brahcyura mash from Biomass and Eggs.</description>
+    <jobString>Making Minuca Brachyura Eggmash.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Biomass</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EggBrachyuraCoastalUnfertilized</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Biomass</li>
+        <li>EggBrachyuraCoastalUnfertilized</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Brachyura_MinucaBrachyuraPrecursor>1</Brachyura_MinucaBrachyuraPrecursor>
+    </products>
+	<researchPrerequisite>Brachyura_Breeding_II</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

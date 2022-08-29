@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>Brachyura_Tab</defName>
+    <label>Brachyura</label>
+  </ResearchTabDef>
+  
+  <!-- Bases -->
+
+  <ResearchProjectDef Abstract="True" Name="BaseBrachyuraResearch">
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <!--
+	<techprintCount>1</techprintCount>
+    <techprintCommonality>1</techprintCommonality>
+    <techprintMarketValue>500</techprintMarketValue>
+    <heldByFactionCategoryTags><li>GreatHouseTelvanni</li></heldByFactionCategoryTags>
+	-->
+	<tab>Brachyura_Tab</tab>
+  </ResearchProjectDef>
+  
+  <!-- <ResearchProjectDef Abstract="True" Name="BaseBrachyuraResearch_Plant" ParentName="BaseBrachyuraResearch">
+    <baseCost>500</baseCost>
+  </ResearchProjectDef> -->
+  
+  <ResearchProjectDef Abstract="True" Name="BaseBrachyuraResearch_Weapon" ParentName="BaseBrachyuraResearch">
+    <baseCost>500</baseCost>
+  </ResearchProjectDef>
+  
+  <!-- <ResearchProjectDef Abstract="True" Name="BaseTelvanniResearch_Stave" ParentName="BaseBrachyuraResearch">
+    <baseCost>800</baseCost>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef Abstract="True" Name="BaseTelvanniResearch_Alchemy" ParentName="BaseBrachyuraResearch">
+    <baseCost>500</baseCost>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef Abstract="True" Name="BaseTelvanniResearch_Misc" ParentName="BaseBrachyuraResearch">
+    <baseCost>500</baseCost>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef Abstract="True" Name="BaseTelvanniResearch_Advanced" ParentName="BaseBrachyuraResearch">
+    <baseCost>1000</baseCost>
+  </ResearchProjectDef> -->
+
+</Defs>

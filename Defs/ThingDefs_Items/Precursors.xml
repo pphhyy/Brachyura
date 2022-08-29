@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_MaleBrachyuraPrecursor</defName>
+    <label>Male Brachyura Mash</label>
+    <description>Fertilized Male Brachyura eggs. This egg needs to develop in a Spawning pool before it becomes a male Brachyura. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_FemaleBrachyuraPrecursor</defName>
+    <label>Female Brachyura Mash</label>
+    <description>Fertilized Female Brachyura egg. This egg needs to develop in a Spawning pool before it becomes a female Brachyura. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_SeerBrachyuraPrecursor</defName>
+    <label>Seer Brachyura Mash</label>
+    <description>Fertilized Seer Brachyura egg. This egg needs to develop in a Spawning pool before it becomes a Seer Brachyura. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_SlaveBrachyuraPrecursor</defName>
+    <label>Slave Brachyura Mash</label>
+    <description>Fertilized Slave Brachyura egg. This egg needs to develop in a Spawning pool before it becomes a Slave Brachyura. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_IrroatusBrachyuraPrecursor</defName>
+    <label>Irroatus Brachyura Mash</label>
+    <description>Fertilized Irroatus Brachyura egg. This egg needs to develop in a Spawning pool before it becomes a Irroatus Brachyura. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Brachyura_MinucaBrachyuraPrecursor</defName>
+    <label>Minuca Brachyura Mash</label>
+    <description>Fertilized Minuca Brachyura eggs. These eggs need to develop in a Spawning pool before they become Minucas. They should be placed into the Spawning pool soon after Fertilization.</description>
+    <graphicData>
+      <texPath>Resources/BrachyuraEggsRaw/Coastal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
