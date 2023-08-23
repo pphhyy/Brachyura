@@ -37,7 +37,7 @@
 					<PsychicSensitivity>2.0</PsychicSensitivity>
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -52,7 +52,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -67,7 +67,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -82,7 +82,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -97,7 +97,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -112,7 +112,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -127,7 +127,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -142,7 +142,7 @@
 				<statOffsets>
 					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 				</statOffsets>
@@ -157,7 +157,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -173,7 +173,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -189,7 +189,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -205,7 +205,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -221,7 +221,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -237,7 +237,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>  
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -253,7 +253,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -269,7 +269,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -285,7 +285,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -301,7 +301,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -317,7 +317,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 
@@ -333,7 +333,7 @@
 				<statOffsets>
 				    <ArmorRating_Blunt>1</ArmorRating_Blunt>
 					<ArmorRating_Sharp>1</ArmorRating_Sharp>
-					<ToxicSensitivity>0</ToxicSensitivity>
+					<ToxicResistance>1</ToxicResistance>
 					<ArmorRating_Heat>0</ArmorRating_Heat>
 					<IncomingDamageFactor>0</IncomingDamageFactor>	<!-- just flat reduces damage taken -->
 

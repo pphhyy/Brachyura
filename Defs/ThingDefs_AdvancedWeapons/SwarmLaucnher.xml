@@ -31,6 +31,7 @@
       <li>SingleUseWeapon</li>
       <li>RewardStandardLowFreq</li>
     </thingSetMakerTags>
+    <smeltable>false</smeltable>
     <relicChance>0</relicChance>
     <verbs>
       <li>

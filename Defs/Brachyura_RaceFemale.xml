@@ -17,7 +17,7 @@
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>35</ComfyTemperatureMax>
 			<PsychicSensitivity>1.0</PsychicSensitivity>
-			<ToxicSensitivity>1.0</ToxicSensitivity>
+			<ToxicResistance>0</ToxicResistance>
 			<ImmunityGainSpeed>1.0</ImmunityGainSpeed>
 			<GlobalLearningFactor>1.0</GlobalLearningFactor>
 			<SocialImpact>1.0</SocialImpact>
@@ -65,23 +65,21 @@
           <!-- <femaleGenderProbability>1.0</femaleGenderProbability> -->
           <alienPartGenerator>
 		   <!-- <colorChannels Inherit="False"/> -->
-			<aliencrowntypes>
-				<li>Average_Normal</li>
-			</aliencrowntypes>
-			<alienbodytypes>
+		   <headTypes>
+				<li>Female_AverageNormal</li>
+		   </headTypes>
+			<bodyTypes>
 				<li>Female</li>
-			</alienbodytypes>
+			</bodyTypes>
 		  </alienPartGenerator>
 
 			</generalSettings>
 			
 			<graphicPaths>
-				<li>
 					<body>Races/BrachyuraRace/Bodies/</body>
 					<head>Races/BrachyuraRace/Heads/Female/</head>
 					<!-- <skeleton>Races/BrachyuraRace/Bodies/dessicated/</skeleton> -->
 					<!-- <skull>Races/BrachyuraRace/Heads/dessicated/</skull> -->
-				</li>
 				<!-- <li>
 				 <lifeStageDefs>
                     <li>FemaleBrachyuraBaby</li>
