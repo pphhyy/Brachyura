@@ -6,8 +6,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>pphhyy_crabs_callreverb_1a</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>pphhyy_crabs_callreverb_1a</clipPath>
           </li>
         </grains>
         <volumeRange>15.42672~14.7734</volumeRange>
@@ -25,8 +25,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>pphhyy_crabs_angryreverb_1b</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>pphhyy_crabs_angryreverb_1b</clipPath>
           </li>
         </grains>
         <volumeRange>25~25</volumeRange>
@@ -43,8 +43,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>pphhyy_crabs_woundedreverb_1b</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>pphhyy_crabs_woundedreverb_1b</clipPath>
           </li>
         </grains>
         <volumeRange>15~15</volumeRange>
@@ -62,8 +62,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>pphhyy_crabs_deathreverb_1a</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>pphhyy_crabs_deathreverb_1a</clipPath>
           </li>
         </grains>      
         <volumeRange>20~20</volumeRange>
