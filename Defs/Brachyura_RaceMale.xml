@@ -47,7 +47,7 @@
 
 			<lifeStageAges Inherit="false">
              <li>
-               <def>BrachyuraBaby</def>
+               <def>HumanlikeChild</def>
                <minAge>0</minAge>
              </li>
              <li>
