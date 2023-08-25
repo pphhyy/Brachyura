@@ -79,6 +79,11 @@
            <hatcherDaystoHatch>30</hatcherDaystoHatch>
            <hatcherPawn>pphhyy_Brachyura_Male</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 
@@ -103,6 +108,11 @@
            <hatcherDaystoHatch>45</hatcherDaystoHatch>
            <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 
@@ -127,6 +137,11 @@
            <hatcherDaystoHatch>45</hatcherDaystoHatch>
            <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 
@@ -151,6 +166,11 @@
            <hatcherDaystoHatch>15</hatcherDaystoHatch>
            <hatcherPawn>pphhyy_Brachyura_Female</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 
@@ -175,6 +195,11 @@
            <hatcherDaystoHatch>10</hatcherDaystoHatch>
            <hatcherPawn>BrachyuraIrroatus</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 
@@ -199,6 +224,11 @@
            <hatcherDaystoHatch>5</hatcherDaystoHatch>
            <hatcherPawn>BrachyuraIrroatus</hatcherPawn>
          </li>
+		 <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			<disableIfHatcher>true</disableIfHatcher>
+		  </li>
         </comps>
      </ThingDef>
 

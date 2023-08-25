@@ -80,6 +80,40 @@
 		<statBases>
 		  <LeatherAmount>60</LeatherAmount>
 		</statBases>
+		<alienRace>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+					<li MayRequire="vanillaracesexpanded.android">VREA_SyntheticSkin</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+		</alienRace>
 		<race>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
@@ -103,28 +137,6 @@
 				  <li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve> -->
-			<lifeStageAges>
-				<li>
-				  <def>CrabBabyZoea</def>
-				  <minAge>0</minAge>
-				</li>
-				<!-- <li>
-				  <def>HumanlikeToddler</def>
-				  <minAge>1.2</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeChild</def>
-				  <minAge>4</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeTeenager</def>
-				  <minAge>13</minAge>
-				</li> -->
-				<li>
-				  <def>CrabAdult</def>
-				  <minAge>1</minAge>
-				</li>
-			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

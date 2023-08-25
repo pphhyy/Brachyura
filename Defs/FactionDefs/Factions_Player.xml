@@ -25,7 +25,6 @@
 		<allowedCultures>
 			<li>Corunan</li>
 		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 		  <li>TribalStart</li>
 		</startingResearchTags>

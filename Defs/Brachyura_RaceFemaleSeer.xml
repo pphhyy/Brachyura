@@ -19,7 +19,7 @@
 			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>35</ComfyTemperatureMax>
-			<ToxicSensitivity>1.0</ToxicSensitivity>
+			<ToxicResistance>0</ToxicResistance>
 			<ImmunityGainSpeed>1.0</ImmunityGainSpeed>
 			<GlobalLearningFactor>1.0</GlobalLearningFactor>
 			<SocialImpact>2.0</SocialImpact>
@@ -45,7 +45,7 @@
 
 			<lifeStageAges Inherit="false">
              <li>
-               <def>BrachyuraBaby</def>
+               <def>HumanlikeChild</def>
                <minAge>0</minAge>
              </li>
              <li>
@@ -67,23 +67,21 @@
           <!-- <femaleGenderProbability>1.0</femaleGenderProbability> -->
           <alienPartGenerator>
 		   <!-- <colorChannels Inherit="False"/> -->
-			<aliencrowntypes>
-				<li>Average_Normal</li>
-			</aliencrowntypes>
-			<alienbodytypes>
+			<headTypes>
+				<li>Female_AverageNormal</li>
+			</headTypes>
+			<bodyTypes>
 				<li>Female</li>
-			</alienbodytypes>
+			</bodyTypes>
 		  </alienPartGenerator>
 
 			</generalSettings>
 			
 			<graphicPaths>
-				<li>
 					<body>Races/BrachyuraRace/Bodies/Seer/</body>
 					<head>Races/BrachyuraRace/Heads/Female/Seer/</head>
 					<!-- <skeleton>Races/BrachyuraRace/Bodies/dessicated/</skeleton> -->
 					<!-- <skull>Races/BrachyuraRace/Heads/dessicated/</skull> -->
-				</li>
 			</graphicPaths>
 
 			<!--<pawnKindSettings>

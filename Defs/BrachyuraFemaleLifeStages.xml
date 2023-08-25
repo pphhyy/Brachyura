@@ -4,6 +4,7 @@
   <LifeStageDef>
     <defName>BrachyuraAdult</defName>
     <label>adult</label>
+    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
     <visible>false</visible>
     <reproductive>true</reproductive>
     <milkable>true</milkable>
@@ -13,6 +14,7 @@
   <LifeStageDef>
     <defName>BrachyuraBaby</defName>
     <label>child</label>
+    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
     <visible>false</visible>
     <reproductive>false</reproductive>
     <milkable>false</milkable>
